@@ -102,7 +102,7 @@ public class Startupcommands implements ModInitializer {
 							}
 							else {
 								updatedCommands = new String[1];
-								updatedCommands[0] = StringArgumentType.getString(context, "command (without /)");
+								updatedCommands[0] = StringArgumentType.getString(context, "command (ex: \"time set day\")");
 							}
 							writeFile(updatedCommands);
 							context.getSource().sendFeedback(() -> Text.literal("Added command " + command), false);
