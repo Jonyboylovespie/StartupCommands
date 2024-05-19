@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "startup-commands",
+	"version": "${version}",
+	"name": "startup-commands",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Jonyboylovespie"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/startup-commands/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"jonyboylovespie.startupcommands.Startupcommands"
+		]
+	},
+	"mixins": [
+		"startup-commands.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
